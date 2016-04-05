@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Orlodrim"
+		]
+	},
+	"googlegeocode-desc": "Fournit une interface pour utiliser dans MediaWiki l’API Géocodage de Google Maps"
+}
