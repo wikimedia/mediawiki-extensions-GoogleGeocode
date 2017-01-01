@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ike Hecht"
+			"Ike Hecht",
+			"Umherirrender"
 		]
 	},
-	"googlegeocode-desc": "{{desc}}"
+	"googlegeocode-desc": "{{desc|name=GoogleGeocode|url=https://www.mediawiki.org/wiki/Extension:GoogleGeocode}}"
 }
