@@ -20,7 +20,7 @@
 	"support": {
 		"wiki": "https://www.mediawiki.org/wiki/Extension:GoogleGeocode",
 		"forum": "https://www.mediawiki.org/wiki/Extension_talk:GoogleGeocode",
-		"source": "https://git.wikimedia.org/tree/mediawiki%2Fextensions%2FGoogleGeocode",
+		"source": "https://phabricator.wikimedia.org/diffusion/EGGC",
 		"issues": "https://www.mediawiki.org/wiki/Extension_talk:GoogleGeocode",
 		"irc": "irc://irc.freenode.org/mediawiki"
 	},
