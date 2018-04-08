@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Railfail536"
+		]
+	},
+	"googlegeocode-desc": "Implementacja interfejsu Google Maps Geocoding API dla oprogramowania MediaWiki"
+}
