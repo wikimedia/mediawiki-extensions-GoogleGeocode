@@ -3,6 +3,7 @@
 	"author": "Ike Hecht",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleGeocode",
 	"descriptionmsg": "googlegeocode-desc",
+	"license-name": "GPL-2.0-or-later",
 	"version": "0.1.0",
 	"type": "parserhook",
 	"AutoloadClasses": {
