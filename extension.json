@@ -16,9 +16,7 @@
 		"GoogleGeocodeDelimiter": ";"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"GoogleGeocodeHooks::onParserFirstCallInit"
-		]
+		"ParserFirstCallInit": "GoogleGeocodeHooks::onParserFirstCallInit"
 	},
 	"MessagesDirs": {
 		"GoogleGeocode": [
