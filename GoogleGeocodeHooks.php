@@ -22,7 +22,7 @@ class GoogleGeocodeHooks {
 	/**
 	 * Sets up the googlegeocode parser hook
 	 *
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
 		$parser->setFunctionHook( 'googlegeocode', 'GoogleGeocodeHooks::geocode' );
@@ -34,9 +34,9 @@ class GoogleGeocodeHooks {
 	 * @global string $wgGoogleGeocodeAPIKey
 	 * @global string $wgGoogleGeocodeDelimiter
 	 * @global integer $wgGoogleGeocodeExpiry
-	 * @param Parser $parser
-	 * @param string $addressSent The address requested. Can also be a place name, etc.
-	 * @param string $resultComponentSent The component requested
+	 * @param Parser &$parser
+	 * @param string|null $addressSent The address requested. Can also be a place name, etc.
+	 * @param string|null $resultComponentSent The component requested
 	 * @param string $resultPath The path type to use for the result. Can be set to: long_name, short_name or types.
 	 * @return string
 	 */
@@ -87,7 +87,7 @@ class GoogleGeocodeHooks {
 	 * Get the first result set from Google that matches the address
 	 *
 	 * @param string $address
-	 * @param string $apiKey
+	 * @param string|null $apiKey
 	 * @return string|null Returns null if the address is not found
 	 */
 	public static function getFromGoogleAPI( $address, $apiKey = null ) {
@@ -135,7 +135,7 @@ class GoogleGeocodeHooks {
 	 * @return array
 	 */
 	private static function getAddressComponents( array $result, $resultPath = 'long_name' ) {
-		$addressComponents = array();
+		$addressComponents = [];
 		foreach ( $result['address_components'] as $component ) {
 			foreach ( $component['types'] as $type ) {
 				$addressComponents[$type] = $component[$resultPath];
@@ -151,7 +151,7 @@ class GoogleGeocodeHooks {
 	 * @return array
 	 */
 	private static function getGeometryComponents( array $result ) {
-		$geometryComponents = array();
+		$geometryComponents = [];
 		$coordinates = $result['geometry']['location'];
 		$geometryComponents['lat'] = $coordinates['lat'];
 		$geometryComponents['lng'] = $coordinates['lng'];

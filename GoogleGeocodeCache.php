@@ -28,7 +28,7 @@ class GoogleGeocodeCache {
 	 * Get this call from db cache
 	 *
 	 * @param string $address
-	 * @return string|boolean
+	 * @return string|bool
 	 */
 	public static function getCache( $address ) {
 		$cache = wfGetCache( CACHE_ANYTHING );
@@ -45,8 +45,8 @@ class GoogleGeocodeCache {
 	 *
 	 * @param string $address
 	 * @param string $response
-	 * @param integer $cache_expire
-	 * @return boolean
+	 * @param int $cache_expire
+	 * @return bool
 	 */
 	public static function setCache( $address, $response, $cache_expire = 0 ) {
 		$cache = wfGetCache( CACHE_ANYTHING );

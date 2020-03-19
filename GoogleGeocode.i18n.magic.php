@@ -1,14 +1,14 @@
 <?php
 /**
-
+ *
  * @file
  * @author Ike Hecht
  */
-$magicWords = array();
+$magicWords = [];
 
 /** English
  * @author Ike Hecht
  */
-$magicWords['en'] = array(
-	'googlegeocode' => array( 0, 'googlegeocode' )
-);
+$magicWords['en'] = [
+	'googlegeocode' => [ 0, 'googlegeocode' ]
+];
