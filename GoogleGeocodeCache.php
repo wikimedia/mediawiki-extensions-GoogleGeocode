@@ -31,8 +31,8 @@ class GoogleGeocodeCache {
 	 * @return string|bool
 	 */
 	public static function getCache( $address ) {
-		$cache = wfGetCache( CACHE_ANYTHING );
-		$key = wfMemcKey( 'googlegeocode', $address );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$key = $cache->makeKey( 'googlegeocode', $address );
 		$cached = $cache->get( $key );
 		wfDebugLog( "GoogleGeocode",
 			__METHOD__ . ": got " . var_export( $cached, true ) .
@@ -49,8 +49,8 @@ class GoogleGeocodeCache {
 	 * @return bool
 	 */
 	public static function setCache( $address, $response, $cache_expire = 0 ) {
-		$cache = wfGetCache( CACHE_ANYTHING );
-		$key = wfMemcKey( 'googlegeocode', $address );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$key = $cache->makeKey( 'googlegeocode', $address );
 		wfDebugLog( "GoogleGeocode",
 			__METHOD__ . ": caching " . var_export( $response, true ) .
 			" from Google." );
