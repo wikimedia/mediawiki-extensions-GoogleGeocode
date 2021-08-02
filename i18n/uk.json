@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion"
 		]
 	},
-	"googlegeocode-desc": "MediaWiki-враппер для Google Maps Geocoding API"
+	"googlegeocode-desc": "Обгортка MediaWiki для API геокодування Google Maps"
 }
