@@ -22,7 +22,7 @@
 		"forum": "https://www.mediawiki.org/wiki/Extension_talk:GoogleGeocode",
 		"source": "https://phabricator.wikimedia.org/diffusion/EGGC",
 		"issues": "https://www.mediawiki.org/wiki/Extension_talk:GoogleGeocode",
-		"irc": "irc://irc.freenode.org/mediawiki"
+		"irc": "irc://irc.libera.chat/mediawiki"
 	},
 	"require": {
 		"php": ">=5.3.0",
