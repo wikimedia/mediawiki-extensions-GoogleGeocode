@@ -1,4 +1,5 @@
 {
+	"name": "GoogleGeocode",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
