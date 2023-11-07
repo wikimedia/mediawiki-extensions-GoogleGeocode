@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"googlegeocode-desc": "MediaWiki-wrapper voor de Google Maps Geocoding API"
+}
