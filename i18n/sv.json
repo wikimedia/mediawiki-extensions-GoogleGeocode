@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"googlegeocode-desc": "MediaWiki-wrapper för Google Maps Geocoding API"
+}
